@@ -30,7 +30,9 @@ repo sync -f --force-sync --no-clone-bundle
 
 . fixestreble/patch.sh
 
-source build/envsetup.sh
+cd device/rr/sepolicy && git am --skip && cd ../../..
+
+. build/envsetup.sh
 
 breakfast vky
 
@@ -39,8 +41,6 @@ lunch rr_vky-userdebug
 export USE_CCACHE=1
 
 ~/RR/prebuilts/misc/linux-x86/ccache/ccache -M 50G
-
-export CCACHE_COMPRESS=1
 
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 
@@ -59,6 +59,8 @@ repo sync --force-sync
 . patcher/patch.sh
 
 . fixestreble/patch.sh
+
+cd device/rr/sepolicy && git am --skip && cd ../../..
 
 source build/envsetup.sh
 
