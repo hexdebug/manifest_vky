@@ -1,3 +1,4 @@
+cd RR
 repo sync --force-sync
 . patcher/patch.sh
 . fixestreble/patch.sh
