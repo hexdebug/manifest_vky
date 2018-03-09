@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="opengapps/aosp_build" path="vendor/opengapps/build" remote="github" revision="master" />
+  <project name="opengapps/all" path="vendor/opengapps/sources/all" remote="github" revision="master" />
+  <project name="opengapps/arm" path="vendor/opengapps/sources/arm" remote="github" revision="master" />
+  <project name="opengapps/arm64" path="vendor/opengapps/sources/arm64" remote="github" revision="master" />
+  <project name="opengapps/x86" path="vendor/opengapps/sources/x86" remote="github" revision="master" />
+  <project name="opengapps/x86_64" path="vendor/opengapps/sources/x86_64" remote="github" revision="master" />
+  <project name="BadWolf-alfa/proprietary_vendor_huawei_vky" path="vendor/huawei/vky" remote="github" revision="master" />
+  <project name="BadWolf-alfa/android_device_huawei_vky" path="device/huawei/vky" remote="github" revision="master" />
+  <project name="BadWolf-alfa/android_patcher" path="patcher" remote="github" revision="master" />
+  <project name="BadWolf-alfa/android_vky_fixes" path="fixestreble" remote="github" revision="master" />
+</manifest>
