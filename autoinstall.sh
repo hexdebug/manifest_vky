@@ -11,3 +11,4 @@ cd ~/RR
 repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b oreo
 git clone https://github.com/BadWolf-alfa/manifest_vky .repo/local_manifests
 repo sync -f --force-sync --no-clone-bundle
+~/RR/prebuilts/misc/linux-x86/ccache/ccache -M 25G
