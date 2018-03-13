@@ -25,9 +25,9 @@ git clone https://github.com/BadWolf-alfa/manifest_vky .repo/local_manifests
 
 repo sync -f --force-sync --no-clone-bundle
 
-sudo rm -r packages/apps/Settings && git clone -b oreo https://github.com/Huawei-Dev/Resurrection_packages_apps_Settings packages/apps/Settings
+sudo rm -r packages/apps/Settings && git clone -b oreo https://github.com/BadWolf-alfa/Resurrection_packages_apps_Settings packages/apps/Settings
 
-sudo rm -r frameworks/base && git clone -b oreo https://github.com/Huawei-Dev/android_frameworks_base frameworks/base
+sudo rm -r frameworks/base && git clone -b oreo https://github.com/BadWolf-alfa/android_frameworks_base frameworks/base
 
 . patcher/patch.sh
 
@@ -59,9 +59,9 @@ make -j8
 
 repo sync --force-sync
 
-sudo rm -r packages/apps/Settings && git clone -b oreo https://github.com/Huawei-Dev/Resurrection_packages_apps_Settings packages/apps/Settings
+sudo rm -r packages/apps/Settings && git clone -b oreo https://github.com/BadWolf-alfa/Resurrection_packages_apps_Settings packages/apps/Settings
 
-sudo rm -r frameworks/base && git clone -b oreo https://github.com/Huawei-Dev/android_frameworks_base frameworks/base
+sudo rm -r frameworks/base && git clone -b oreo https://github.com/BadWolf-alfa/android_frameworks_base frameworks/base
 
 . patcher/patch.sh
 
