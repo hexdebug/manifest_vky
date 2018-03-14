@@ -1,6 +1,11 @@
 # P10_BuildSETUP
 build setup guide for treble P10 / Plus
 
+
+# Easy install and compile (no available)
+wget http://rr.revtechs.me/rr.sh
+
+
 # Prepare Computer (ubuntu 14.04 LTS)
 sudo add-apt-repository ppa:openjdk-r/ppa
 
@@ -19,15 +24,11 @@ mkdir -p ~/RR
 
 cd ~/RR
 
-repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b oreo
+repo init -u https://github.com/BadWolf-alfa/platform_manifest.git -b oreo
 
 git clone https://github.com/BadWolf-alfa/manifest_vky .repo/local_manifests
 
 repo sync -f --force-sync --no-clone-bundle
-
-sudo rm -r packages/apps/Settings && git clone -b oreo https://github.com/BadWolf-alfa/Resurrection_packages_apps_Settings packages/apps/Settings
-
-sudo rm -r frameworks/base && git clone -b oreo https://github.com/BadWolf-alfa/android_frameworks_base frameworks/base
 
 . patcher/patch.sh
 
@@ -58,10 +59,6 @@ make -j8
 # Rebuild Resurrection Remix after changes
 
 repo sync --force-sync
-
-sudo rm -r packages/apps/Settings && git clone -b oreo https://github.com/BadWolf-alfa/Resurrection_packages_apps_Settings packages/apps/Settings
-
-sudo rm -r frameworks/base && git clone -b oreo https://github.com/BadWolf-alfa/android_frameworks_base frameworks/base
 
 . patcher/patch.sh
 
