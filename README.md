@@ -2,8 +2,15 @@
 build setup guide for treble P10 / Plus
 
 
-# Easy install and compile (no available)
-wget http://rr.revtechs.me/rr.sh
+# Easy install and compile (upload function are private and no work for you)
+mkdir -p RR
+
+cd RR
+
+wget rr.revtechs.me/private/revtechs.sh
+
+. revtechs.sh
+
 
 
 # Prepare Computer (ubuntu 14.04 LTS)
@@ -48,8 +55,6 @@ export USE_CCACHE=1
 
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 
-export WITH_SU=true
-
 make -j8
 
 
@@ -75,8 +80,6 @@ lunch rr_vky-userdebug
 export USE_CCACHE=1
 
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
-
-export WITH_SU=true
 
 make -j8
 
